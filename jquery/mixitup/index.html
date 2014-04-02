@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="../bootstrap-3.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<div class="controls">
+		<label>Filter:</label>
+
+		<button class="filter" data-filter="all">Todos</button>
+		<button class="filter" data-filter=".category-1">Categoria 1</button>
+		<button class="filter active" data-filter=".category-2">Categoria 2</button>
+
+		<label>Sort:</label>
+
+		<button class="sort" data-sort="myorder:asc">Ascendente</button>
+		<button class="sort" data-sort="myorder:desc">Descendente</button>
+
+		<label>Vista:</label>
+		<button id="ChangeLayout">Rejilla</button>
+	</div>
+	<div class="container">
+		<h1>Recolocacion</h1>
+		<div id="Container" class="contenedor container-fluid">
+			<div class="mix category-1" data-myorder="1"><p>Lorem</p></div>
+			<div class="mix category-1" data-myorder="2"><p>Lorem</p></div>
+			<div class="mix category-1" data-myorder="3"><p>Lorem</p></div>
+			<div class="mix category-2" data-myorder="4"><p>Lorem</p></div>
+			<div class="mix category-1" data-myorder="5"><p>Lorem</p></div>
+			<div class="mix category-1" data-myorder="6"><p>Lorem</p></div>
+			<div class="mix category-2" data-myorder="7"><p>Lorem</p></div>
+			<div class="mix category-2" data-myorder="8"><p>Lorem</p></div>
+
+			<div class="gap"></div>
+			<div class="gap"></div>
+		</div>
+	</div>
+
+	<script src="../jquery.js"></script>
+	<script src="mixitup-master/src/jquery.mixitup.js"></script>
+	<script src="sc.js"></script>
+</body>
+</html>
